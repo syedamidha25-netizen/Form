@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+    <h2>Registration</h2>
+
+    <form id="regForm">
+
+        <!-- Personal Info -->
+        <div class="section">
+            <h4>Personal Information</h4>
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Username" required>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="section">
+            <h4>Contact Details</h4>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+        </div>
+
+        <!-- Password -->
+        <div class="section">
+            <h4>Security</h4>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+        </div>
+
+        <!-- Address -->
+        <div class="section">
+            <h4>Address</h4>
+            <input type="text" placeholder="Street Address">
+            <select required>
+                <option value="">Select Country</option>
+                <option>Pakistan</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Canada</option>
+            </select>
+        </div>
+
+        <!-- Preferences -->
+        <div class="section">
+            <h4>Preferences</h4>
+            <div class="inline">
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+                <label><input type="radio" name="gender"> Other</label>
+            </div>
+            <br>
+            <label><input type="checkbox" required> I agree to the terms</label>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
