@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
     <div class="form-container">
@@ -61,6 +63,26 @@
         <button type="submit">Register</button>
     </form>
 </div>
+<div class="modal" id="successModal">
+    <div class="modal-content">
+        <h3>🎉 Congratulations!</h3>
+        <p>Your form has been submitted successfully.</p>
+        <button class="close-btn" onclick="closeModal()">OK</button>
+    </div>
+</div>
+<script>
+const form = document.getElementById("regForm");
+const modal = document.getElementById("successModal");
 
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    modal.style.display = "flex";
+});
+
+function closeModal() {
+    modal.style.display = "none";
+    form.reset();
+}
+</script>
 </body>
 </html>

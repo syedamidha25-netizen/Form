@@ -1,0 +1,116 @@
+/* ===== Reset ===== */
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== Background ===== */
+body {
+    min-height: 100vh;
+    margin: 0;
+    background:url("https://i.pinimg.com/736x/7b/b2/b6/7bb2b666b14fbf5fbeebf6dda80b0f5c.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== Form Card ===== */
+.form-container {
+    width: 420px;
+    background: rgba(20, 20, 40, 0.75);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+/* ===== Title ===== */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ===== Sections ===== */
+.section {
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.section h4 {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* ===== Inputs ===== */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* ===== Inline Options ===== */
+.inline {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* ===== Button ===== */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff5f6d, #845ec2);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* ===== Modal ===== */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.modal-content h3 {
+    color: #333;
+}
+
+.close-btn {
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: #845ec2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
